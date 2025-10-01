@@ -2,7 +2,7 @@ service: test-nestjs
 
 provider:
   name: aws
-  runtime: nodejs18.x
+  runtime: nodejs22.x
   region: ap-northeast-1
   stage: dev
   profile: dannyisadog0826
@@ -23,7 +23,7 @@ build:
     sourcemap: true
     exclude: ['@types/*', '*.test.*', '*.spec.*']
     external: ['class-validator', 'class-transformer', '@nestjs/websockets', '@nestjs/microservices', '@nestjs/websockets/socket-module', '@nestjs/microservices/microservices-module']
-    target: node18
+    target: node22
     define:
       'require.main': undefined
     platform: node
