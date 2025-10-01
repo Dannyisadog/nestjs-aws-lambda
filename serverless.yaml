@@ -1,11 +1,11 @@
 service: test-nestjs
+frameworkVersion: ~4.19.1
 
 provider:
   name: aws
   runtime: nodejs22.x
   region: ap-northeast-1
   stage: dev
-  profile: dannyisadog0826
 
 functions:
   api:
